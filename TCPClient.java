@@ -22,7 +22,6 @@ public class TCPClient {
 
         String i = input.nextLine();
 
-
         out.println(i);
 
         String fromServer = in.readLine();

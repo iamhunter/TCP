@@ -37,6 +37,7 @@ public class TCPServer {
             try {
                 Files.write(Paths.get("log.txt"), (fromClient+"\n").getBytes(), StandardOpenOption.APPEND);
             }catch (IOException ignored) {}
+
             String Output = fromClient.toUpperCase();
 
             // Print the data on the screen
