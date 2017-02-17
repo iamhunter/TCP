@@ -17,7 +17,7 @@ public class TCPServer {
         catch (SocketException e) {}
         catch (IOException e) {}
 
-
+            //this is a comment
 
         // Make an infinite loop
         while (true) {
