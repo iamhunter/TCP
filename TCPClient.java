@@ -9,7 +9,7 @@ public class TCPClient {
     public static void main(String args[]) throws Exception {
         Socket clientSocket = null;
         try {
-            clientSocket = new Socket("joey10.cs.clemson.edu", 6023);
+            clientSocket = new Socket("www.google.com", 80);
         } catch (UnknownHostException e) {}
         catch (SocketException e) {}
         catch (IOException e) {}
@@ -22,7 +22,7 @@ public class TCPClient {
 
         String i = input.nextLine();
 
-        out.println(i);
+        out.println("GET /index.html HTTP/1.0\r\n");
 
         String fromServer = in.readLine();
 
